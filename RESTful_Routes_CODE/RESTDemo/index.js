@@ -6,7 +6,7 @@ const app = express();
 
 
 //To parse form data in POST request body:
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true })) 
 // To parse incoming JSON in POST request body:
 app.use(express.json())
 // To 'fake' put/patch/delete requests:

@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 const Product = require('./models/product');
 
-mongoose.connect('mongodb://127.0.0.1:27017/farmStand', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/farmStand2', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MONGO CONNECTION OPEN!!!")
     })
     .catch(err => {
         console.log("OH NO MONGO CONNECTION ERROR!!!!")
-
         console.log(err)
     })
 
